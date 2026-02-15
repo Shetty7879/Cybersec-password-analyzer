@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ CYBERSEC | Password Strength Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-grid"></div>
+
+    <div id="splash-screen">
+        <div class="cyber-loader"></div>
+        <h1 class="splash-text">INITIALIZING <span class="icon">🛡️</span> <span class="highlight">CYBERSEC</span>...
+        </h1>
+        <p class="splash-subtext">SECURE PASSWORD ANALYZER</p>
+    </div>
+
+    <div class="container" id="main-content" style="opacity: 0; transition: opacity 1s;">
+        <header>
+            <div class="logo">
+                <span class="icon">🛡️</span> CYBER<span class="highlight">SEC</span>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </header>
+
+        <main>
+            <div class="card">
+                <h1>Password Strength Analyzer</h1>
+
+                <div class="input-group">
+                    <input type="password" id="password-input" placeholder="Enter your password..." autocomplete="off">
+                    <span id="toggle-password" class="toggle-icon">👁️</span>
+                    <div class="focus-border"></div>
+                </div>
+
+                <div class="strength-meter-container">
+                    <div class="strength-meter-bar" id="strength-bar"></div>
+                </div>
+
+                <div class="strength-text" id="strength-text">Enter password</div>
+
+                <ul class="suggestions" id="suggestions-list">
+                    <!-- Suggestions will appear here -->
+                </ul>
+
+                <div class="action-buttons">
+                    <button id="generate-btn" class="cyber-btn">Suggest Strong Password</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; CYBERSEC &bull; Secure Password Analysis</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
